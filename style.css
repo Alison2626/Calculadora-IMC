@@ -1,0 +1,42 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  img {
+    width: 50%; /* Ajusta a largura da imagem à largura do container */
+    margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px; /* Define a largura do container */
+    margin: 0 auto; /* Centraliza o container na tela */
+    background-color: #f0f0f0; /* Cor de fundo opcional para o container */
+    padding: 20px; /* Adiciona espaçamento interno ao container */
+    border-radius: 10px; /* Bordas arredondadas opcionais */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra opcional */
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="number"],
+  button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #resultado {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  
