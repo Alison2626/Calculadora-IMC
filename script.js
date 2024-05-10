@@ -1,24 +1,49 @@
-function calcularIMC() {
-    // Obter valores de peso e altura
-    let peso = parseFloat(document.getElementById("peso").value);
-    let altura = parseFloat(document.getElementById("altura").value);
-  
-    // Calcular o IMC
-    let imc = peso / (altura * altura);
-  
-    // Determinar a classificação
-    let classificacao;
-    if (imc < 18.5) {
-      classificacao = "Abaixo do peso";
-    } else if (imc < 25) {
-      classificacao = "Peso normal";
-    } else if (imc < 30) {
-      classificacao = "Sobrepeso";
-    } else {
-      classificacao = "Obesidade";
-    }
-  
-    // Exibir o resultado
-    let resultado = document.getElementById("resultado");
-    resultado.textContent = `Seu IMC é: ${imc.toFixed(2)} (${classificacao})`;
+/* style.css */
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw; /* 90% da largura da tela */
+  max-width: 600px; /* Limite máximo de 600px */
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex-wrap: wrap; /* Quebra linhas quando necessário */
+}
+
+h1 {
+  font-size: 1.5em; /* 1.5 vezes o tamanho da fonte base */
+  margin-bottom: 10px;
+}
+
+input[type="number"],
+button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+#resultado {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Espaçamento interno menor em telas menores */
   }
+}
